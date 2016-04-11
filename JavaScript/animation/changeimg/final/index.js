@@ -33,7 +33,7 @@ function prepareSlideshow() {
 	//若用户支持JS脚本，则创建图片节点
 	var imgelem = document.createElement("img");
 	imgelem.setAttribute("id", "preview");
-	imgelem.setAttribute("src", "donghua.png");
+	imgelem.setAttribute("src", "../img/donghua.png");
 	imgelem.setAttribute("alt", "beauty girl");
 	
 	var divelem = document.createElement("div");
