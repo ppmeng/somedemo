@@ -1,0 +1,14 @@
+* {
+	font-family: Arial, sans-serif;
+}
+a {
+	color: #993300;
+}
+#slideshow {
+	position: relative;
+	margin-top: 20px;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	border: 1px solid #FFFF99;
+}

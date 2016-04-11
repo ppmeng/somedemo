@@ -1,0 +1,42 @@
+* {
+	font-family: "Arial", sans-serif;
+}
+table {
+	margin: 20px auto;
+	width: 460px;
+	border:1px dotted #699;
+}
+table caption {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+table th,
+table td {
+	padding: 4px;
+	text-align: left;
+}
+table tr th:first-child {
+	width: 40%;
+}
+table th {
+	font-style: italic;
+	border:1px dotted #699;
+	background: #9999FF;
+}
+/*交替改变tr背景色
+* 若浏览器支持CSS3或者禁用JS时使用如下样式
+*/
+/*tr:nth-child(odd) {
+	background: #ffc;
+}
+tr:nth-child(even) {
+	background: #fff;
+}*/
+
+.intro {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.odd {
+	background-color: #CCCCFF;
+}

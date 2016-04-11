@@ -1,0 +1,14 @@
+body {
+	width: 100%;
+}
+#container {
+	position: relative;
+	width: 980px;
+	height: 600px;
+	margin: 20px auto;
+}
+#girl, 
+#boy {
+	width: 120px;
+	height: 160px;
+}
