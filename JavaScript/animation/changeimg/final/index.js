@@ -33,7 +33,7 @@ function prepareSlideshow() {
 	//若用户支持JS脚本，则创建图片节点
 	var imgelem = document.createElement("img");
 	imgelem.setAttribute("id", "preview");
-	imgelem.setAttribute("src", "http://e.hiphotos.baidu.com/image/pic/item/0ff41bd5ad6eddc49ded85503edbb6fd52663316.jpg");
+	imgelem.setAttribute("src", "../img/donghua.png");
 	imgelem.setAttribute("alt", "beauty girl");
 	
 	var divelem = document.createElement("div");
