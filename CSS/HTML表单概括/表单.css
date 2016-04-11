@@ -1,0 +1,29 @@
+body{
+	font-family: cursive;
+	margin: 20px;
+	background: #efe5d0;
+}
+form {
+	display: table;
+	padding: 10px;
+	border: thin dotted #7e7e7e;
+	background: #e1ceb8;
+}
+.form textarea {
+	width: 500px;
+	height: 200px;
+}
+.tablerow {
+	display: table-row;
+}
+.tablerow p {
+	display: table-cell;
+	vertical-align: top;
+	padding: 3px;
+}
+div.tablerow p:first-child {
+	text-align: right;
+}
+p.heading {
+	font-weight: bold;
+}

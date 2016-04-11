@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bean Machine</title>
+    <link rel="stylesheet" type="text/css" href="表单.css">
+</head>
+<body>
+    <h1>The Starbuzz Bean Machine</h1>
+    <h2>Fill out form below and click "order now" to order </h2>
+    <form action="http://starbuzzcoffee.com/processorder.php" method="POST">
+        <div class="tablerow">
+            <p>Choose your bean:</p> 
+            <p>
+                <select name="choose">
+                    <option value="houseblend">House Blend</option>
+                    <option value="shade">Shade Grown Bolivia</option>
+                    <option value="supremo">Supremo</option>
+                    <option value="organic">Organic Guatemala</option>
+                    <option value="kenya">Kenya</option>
+                </select>
+            </p>
+        </div>
+
+        <div class="tablerow">
+            <p>Type:</p>
+            <p>
+                <input type="radio" name="beantype" value="Whole bean"> Whole bean<br>
+                <input type="radio" name="beantype" value="Ground" checked> Ground
+            </p>
+        </div>
+
+        <div class="tablerow">
+            <p>Number of bags:</p>
+            <p><input type="number" min="1"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>Must arrive by date:</p>
+            <p><input type="date"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>Extras:</p>
+            <p>
+                <input type="checkbox" name="extra[]" value="Gift wrap"> Gift wrap<br>
+                <input type="checkbox" name="extra[]" value="Include catalog with order" checked> Include catalog with order
+            </p>
+        </div>
+
+        <div class="tablerow">
+            <p class="heading">Ship to:</p>
+            <p></p>
+        </div>
+
+        <div class="tablerow">
+            <p>Name:</p> 
+            <p><input type="text" name="fullname" required></p>
+        </div>
+     
+        <div class="tablerow">
+            <p>Address:</p>
+            <p><input type="text" name="address"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>City:</p> 
+            <p><input type="text" name="city"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>State:</p>
+            <p><input type="text" name="state"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>Zip:</p>
+            <p><input type="text" name="zip"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>Phone:</p>
+            <p><input type="tel" name="phone"></p>
+        </div>
+
+        <div class="tablerow">
+            <p>Customer Comment:</p>
+            <p><textarea name="comment" rows="10" cols="48"></textarea></p>
+        </div>
+
+        <div class="tablerow">
+            <p></p>
+            <p><input type="submit" value="Order Now"></p>
+        </div>
+    </form>
+    <form>
+        <input type="file" name="doc">
+        <input type="text" placeholder="ceshiyixia">
+        <input type="range" min="0" max="30" step="3">
+        <input type="color">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
