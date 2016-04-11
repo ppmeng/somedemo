@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="HGL.css">
+  <title>圣杯布局</title>
+</head>
+<body>
+    <div class="main">
+        <div class="middle">
+        	<p>圣杯布局</p>
+        	<p>双飞翼布局和圣杯布局都是采用先中间后两边的布局方法，这个和网页习惯将主要内容放到中间，网页补充信息放在两边应该是相关的(基于这个原因，我们在设计网页的时候要注意平稳退化渐进增强，即要保证用户在网页样式信息不在的时候也能尽量顺畅的浏览网页主要信息，因此在文档流中先写中间栏再写侧栏比较符合要求). 两者之间最大不同就是圣杯布局采用margin以及外围DIV直接将将整个中间位置固定了，所以左右侧栏即使浮动也只能浮动到所固定的中间DIV的两侧边界，因此必须使用相对定位position来完成布局。而双飞翼布局是仅仅将中间栏用DIV固定位置，两侧栏使用float可以直接浮动到网页的左右两侧，由于两侧栏宽度固定，因此可以使用margin的负边距浮动到指定位置</p>
+        </div>
+        <div class="left">left</div>
+        <div class="right">right</div>
+    </div>
+</body>
+</html>
+
+
