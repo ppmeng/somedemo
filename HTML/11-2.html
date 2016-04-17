@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas 切换灰度图片</title>
+</head>
+<body>
+    <img src="1.jpg" id="cute" title="always cute" alt="show you a cute girl">
+    <script>
+    	function convertToGS(img) {
+    		//存储原始彩色版
+    		img.color = img.src;
+
+    		//创建灰度版
+    		img.grayscale = createGSCanvas(img);
+
+    		//在onmouseover时候发生切换
+    	    img.onmouseover = function() {
+    	    	this.src = this.color;
+    	    }
+    	    img.onmouseout = function() {
+    	    	this.src = this.grayscale;
+    	    }
+    	    img.onmouseout();
+    	}
+
+    	function createGSCanvas(img) {
+
+    		var canvas = document.createElement("canvas");
+    		canvas.width = img.width;
+    		canvas.height = img.height;
+
+    		var ctx = canvas.getContext("2d");
+    		ctx.drawImage(img, 0, 0);
+
+    		//getImageData只能操作和脚本处于同一个域中的图片
+    		var c = ctx.getImageData(0, 0, img.width, img.height);
+    		for (var i = 0; i < c.height; i++) {
+    			for (var j = 0; j < c.width; j++) {
+    				var x = (i * 4) * c.height + (j * 4);
+    				var r = c.data[x];
+    				var g = c.data[x + 1];
+    				var b = c.data[x + 2];
+    				c.data[x] = c.data[x + 1] = c.data[x + 2] = (r+g+b)/3;
+    			}
+    		}
+    		ctx.putImageData(c, 0, 0, 0, 0, c.width, c.height);
+    		return canvas.toDataURL();
+    	}
+    	//添加load事件，如果有其他脚本，换用addEventLoad函数比较好
+    	window.onload = function() {
+    		convertToGS(document.getElementById("cute"));
+    	}
+    </script>	
+</body>
+</html>
