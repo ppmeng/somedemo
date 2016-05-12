@@ -6,6 +6,7 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
 }
+
 .middle_inner,
 .left,
 .right {
@@ -16,7 +17,6 @@
 .middle{
   float: left;
   width:100%;
-
 }
 .middle_inner{
   background: orange;
