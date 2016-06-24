@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>新浪微博</title>
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+</head>
+<body>
+    <!--[if lt IE 9]>
+        <h2 style="margin-bottom: 20px;">因为此练习主要是为了练习less且本网页内小图标是由wbficon.woff直接生成，故图标的显示只兼容IE9+,Firefox3.5+,Chrome6+,Safari3.6+,Opera11.1+，有时间再做兼容处理 </h2>
+    <![endif]-->
+    <div class="header">
+        <div class="header-content">
+            <div class="header-wblogo">
+                <a href="index.html"></a>
+            </div>
+            <div class="header-search">
+            	<input id="header_search" type="text" placeholder="加油骚年们！">
+                <a href="#" class="header-searchicon wb-icon">f</a>
+            </div>
+            <div class="header-nav">
+                <nav class="nav-left">
+                	<ul>
+                        <li><a href="#"><span class="wb-icon">E</span><span>首页</span></a></li>
+                        <li><a href="#"><span class="wb-icon">F</span><span>发现</span></a></li>
+                	    <li><a href="#"><span class="wb-icon">G</span><span>游戏</span></a></li>
+                	    <li><a href="#"><span class="wb-icon">H</span><span>_ppmeng_</span></a></li>
+                	</ul>
+                </nav>
+                <nav class="nav-right">
+                	<ul>
+                        <li><a href="#"><span class="wb-icon">I</span></a></li>
+                        <li><a href="#"><span class="wb-icon">J</span></a></li>
+                        <li><a href="#"><span class="wb-icon">ß</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wb-main">
+        <div id="wb-main-content">
+            <div id="left-of-main">
+                <ul class="fir-ul">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                    <li><a href="#">我的赞</a></li>
+                </ul>
+                <div class="left-ul-line">
+                    <fieldset></fieldset>
+                </div>
+                <ul class="hot-wb">
+                    <li>
+                        <a href="#"><span class="wb-icon">ì</span><span>热门微博</span></a>
+                    </li>
+                </ul>
+                <div class="left-ul-line">
+                    <fieldset>
+                        <legend><a href="#" class="wb-icon">J</a></legend>
+                    </fieldset>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#"><span class="wb-icon">C</span><span>好友圈</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="wb-icon">º</span><span>群微博</span></a>
+                    </li>
+                    <li>
+                        <a href="#"><span class="wb-icon">â</span><span>悄悄关注</span></a>
+                    </li>
+                </ul>
+                <div class="left-ul-line">
+                    <fieldset></fieldset>
+                </div>
+            </div>
+            <div id="right-of-main">
+                <div id="right-left-content">
+                    <div class="write-wb">
+                        <div class="some-hot">
+                            <img src="images/share.png">
+                            <div class="hot-weibo">
+                                <a href="#" class="weibo-link">如何成为一名合格的前端工程师？</a>
+                                <a href="#" class="weibo-link">热门微博</a>
+                            </div>
+                        </div>
+                        <div class="text-area">
+                            <textarea></textarea>
+                        </div>
+                        <div class="write-nav">
+                            <ul>
+                                <li class="fir-li">
+                                    <a href="#"><span class="wb-icon ficon-face">o</span><span>表情</span></a>
+                                    <a href="#"><span class="wb-icon ficon-image">p</span><span>图片</span></a>
+                                    <a href="#"><span class="wb-icon ficon-video">q</span><span>视频</span></a>
+                                    <a href="#"><span class="wb-icon ficon-swtopic">"</span><span>话题</span></a>
+                                    <a href="#"><span class="wb-icon ficon-artical"></span><span>头条文章</span></a>
+                                    <a href="#" class="more"><span>...</span></a>
+                                </li>
+                                <li class="sec-li">
+                                    <a href="#"><span>公布</span><span class="wb-icon ficon-more">c</span></a>
+                                    <a class="send">发布</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="wb-tab-box">
+                        <ul>
+                            <li><a href="javascript:void(0)">全部</a></li>
+                            <li><a href="javascript:void(0)">原创</a></li>
+                            <li><a href="javascript:void(0)">图片</a></li>
+                            <li><a href="javascript:void(0)">视频</a></li>
+                            <li><a href="javascript:void(0)">音乐</a></li>
+                            <li><a href="javascript:void(0)">文章</a></li>
+                        </ul>
+                        <div class="input-box">
+                            <input type="text">
+                            <span class="wb-icon">
+                                <a class="search">f</a>
+                                <a class="down-arrow">g</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="weibo">
+                        <div class="wb-main">
+                            <div class="wb-user-image">
+                                <a href="#"><img src="images/user.jpeg"></a>
+                            </div>
+                            <div class="wb-detail">
+                                <div class="wb-user-name">
+                                    <a href="#">_PPmeng_</a>
+                                </div>
+                                <div class="wb-info">
+                                    <a href="#" class="time">1分钟前</a>
+                                    来自
+                                    <a href="#" class="tool">weibo</a>
+                                </div>
+                                <div class="wb-text">
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <img src="images/compare.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wb-operate">
+                            <ul>
+                                <li><a href="#"><span class="wb-icon favorate-icon">û</span><span>收藏</span></a></li>
+                                <li><a href="#"><span class="wb-icon forward-icon"></span><span>0</span></a></li>
+                                <li><a href="#"><span class="wb-icon repeat-icon"></span><span>0</span></a></li>
+                                <li><a href="#"><span class="wb-icon praise-icon"></span><span>0</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="weibo">
+                        <div class="wb-main">
+                            <div class="wb-user-image">
+                                <a href="#"><img src="images/user.jpeg"></a>
+                            </div>
+                            <div class="wb-detail">
+                                <div class="wb-user-name">
+                                    <a href="#">_PPmeng_</a>
+                                </div>
+                                <div class="wb-info">
+                                    <a href="#" class="time">1分钟前</a>
+                                    来自
+                                    <a href="#" class="tool">weibo</a>
+                                </div>
+                                <div class="wb-text">
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <p>要诚实面对自己</p>
+                                    <img src="images/compare.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wb-operate">
+                            <ul>
+                                <li><a href="#"><span class="wb-icon favorate-icon">û</span><span>收藏</span></a></li>
+                                <li><a href="#"><span class="wb-icon forward-icon"></span><span>0</span></a></li>
+                                <li><a href="#"><span class="wb-icon repeat-icon"></span><span>0</span></a></li>
+                                <li><a href="#"><span class="wb-icon praise-icon"></span><span>0</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="right-right-bar">
+                    <div class="user-info">
+                        <div class="bg-top">
+                            <a href="javascript:void(0)"><img class="user-img" src="images/user.jpeg"></a>
+                        </div>
+                        <div class="info-main">
+                            <div class="namebox">
+                                <a href="javascript:void(0)" class="username">_PPmeng_</a>
+                                <a href="javascript:void(0)" class="member-icon">
+                                    <span class="wb_icon"></span>
+                                </a>
+                                <a href="javascript:void(0)" class="level-icon">
+                                    <span class="text-out">
+                                        <span class="text-in">Lv.13</span>
+                                    </span>
+                                </a>
+                            </div>
+                            <ul class="user-atten">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <strong>99</strong>
+                                        <span class="follow">关注</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <strong>50</strong>
+                                        <span class="fans">粉丝</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <strong>99</strong>
+                                        <span class="weibo">微博</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hot-topic">
+                        <div class="topic-title-line">
+                            <h4 class="topic-title">热门话题</h4>
+                            <div class="change">
+                                <a href="javascript:void(0)">
+                                    <span class="wb-icon">e</span>
+                                    <span>换一换</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="topic-content">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">#年轻人还是要多看书啊#</a>
+                                    <span>1亿</span>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">#年轻人还是要多看书啊#</a>
+                                    <span>1亿</span>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">#年轻人还是要多看书啊#</a>
+                                    <span>1亿</span>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">#年轻人还是要多看书啊#</a>
+                                    <span>1亿</span>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">#年轻人还是要多看书啊#</a>
+                                    <span>1亿</span>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">#年轻人还是要多看书啊#</a>
+                                    <span>1亿</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="see-more">
+                            <a href="javascript:void(0)">
+                                <span>查看更多</span>
+                                <span class="wb-icon">a</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
