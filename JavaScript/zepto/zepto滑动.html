@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <script src="zepto/zepto.js"></script>
+    <script src="zepto/event.js"></script>
+    <script src="zepto/touch.js"></script>  
+    <script>
+       $(function() {
+           $("body").swipeLeft(function() {
+               $(this).css("backgroundColor", "red");
+           }).swipeRight(function() {
+               $(this).css("backgroundColor", "pink");               
+           }).swipeUp(function() {
+               $(this).css("backgroundColor", "lightseagreen");
+           }).swipeDown(function() {
+               $(this).css("backgroundColor", "green");                              
+           }).doubleTap(function() {
+               $(this).css("backgroundColor", "#000");                              
+           }).tap(function() {
+               $(this).css("backgroundColor", "#fff");                              
+           }).singleTap(function() {
+               $(this).css("backgroundColor", "blue");                              
+           }).longTap(function() {
+               $(this).css("backgroundColor", "skyblue");                              
+           });
+       })
+    </script>
+
+</body>
+</html>
